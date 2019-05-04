@@ -5,10 +5,11 @@ function transfer(){
 		$("#p1").text("The URL being tested is - "+tablink);
 
 		var xhr=new XMLHttpRequest();
-		params="url="+tablink;
+		console.log(tablink)
+		params ="127.0.0.1:8000/backend/check/?url="+tablink;
 		alert(params);//comment1
 		var markup = "url="+tablink+"&html="+document.documentElement.innerHTML;
-		xhr.open("POST","http://localhost//webc3//clientServer.php",false);
+		xhr.open(params,false);
                 
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhr.send(markup);

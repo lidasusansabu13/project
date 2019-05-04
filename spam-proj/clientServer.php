@@ -11,6 +11,6 @@ $bytes=file_put_contents('markup.txt', $html);
 //$python_path=exec("which python 2>&1 ");
 //$decision=exec("$python_path test.py $site 2>&1 ");
 
-$decision=exec("C:\\Python27\\python test.py $site 2>&1");
+$decision=exec("/Users/sooraj/virtualenvs/phishing/bin/python test.py $site 2>&1");
 echo $decision;
 ?>
