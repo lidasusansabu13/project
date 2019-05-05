@@ -11,6 +11,7 @@ import whois
 from datetime import datetime
 import time
 import os
+import urllib2
 
 # https://breakingcode.wordpress.com/2010/06/29/google-search-python/
 # Previous package structure was modified. Import statements according to new structure added. Also code modified.
@@ -337,10 +338,11 @@ def statistical_report(url, hostname):
 
 
 def main(url):
-    with open(os.getcwd()  + '/backend/markup.txt', 'r') as file:
-        soup_string = file.read()
+    # with open(os.getcwd()  + '/backend/markup.txt', 'r') as file:
+    #     soup_string = file.read()
 
-    soup = BeautifulSoup(soup_string, 'html.parser')
+    page = urllib2.urlopen(url)
+    soup = BeautifulSoup(page, 'html.parser')
 
     status = []
 

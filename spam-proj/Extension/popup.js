@@ -20,12 +20,14 @@ function transfer(){
 					//document.getElementById("message").innerHTML =this.responseText;
 					//alerts response text
 					alert("The website is "+this.responseText);
+				$("#div1").text(this.responseText);
+				// return this.responseText;
 			}
 		};
 
 
-		$("#div1").text(JSON.stringify(xhr));
-		return xhr.responseText;
+		$("#div1").text(this.responseText);
+		return this.responseText;
 	});
 }
 
