@@ -9,7 +9,7 @@ function transfer(){
 		params ="127.0.0.1:8000/backend/check/?url="+tab.url;
 		//alert(params);//comment1
 		var markup = "url="+tablink+"&html="+document.documentElement.innerHTML;
-		xhr.open("GET","http://127.0.0.1:8000/backend/check/?url="+tablink,true);
+		xhr.open("GET","http://127.0.0.1:8000/check/?url="+tablink,true);
                 
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhr.send(markup);
