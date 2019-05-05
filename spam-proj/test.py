@@ -26,7 +26,7 @@ def main():
         print("SAFE")
     elif int(pred[0]) == -1:
         # print "The website has phishing features. DO NOT VISIT!"
-        print("PHISHING")
+        print("PHishing")
 
         # print 'Error -', features_test
 

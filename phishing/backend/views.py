@@ -11,6 +11,7 @@ from sklearn.externals import joblib
 import os
 from django.http import HttpResponse
 
+
 # Create your views here.
 
 
@@ -37,9 +38,11 @@ def check_website(request):
 
     if int(pred[0]) == 1:
         # print "The website is safe to browse"
-        return HttpResponse("<h1>Non phishing</h2>")
+        print ("SAFE")
+        return HttpResponse("SAFE")
     elif int(pred[0]) == -1:
+        print(" PHISING")
         # print "The website has phishing features. DO NOT VISIT!"
-        return HttpResponse("<h1>phishing</h2>")
+        return HttpResponse('Phising')
 
         # print 'Error -', features_test

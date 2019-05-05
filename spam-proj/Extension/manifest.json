@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Malicious Web Content Detector",
-  "description": "This extension helps you avoid accessing malicious websites by giving you a chance to analyze the website before you interact with it.",
+  "description": "This extension helps you avoid accessing Phishing websites by giving you a chance to analyze the website before you interact with it.",
   "version": "1.0",
 
   "browser_action": {
